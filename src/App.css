@@ -1,0 +1,240 @@
+/* Global Styles */
+body {
+  font-family: 'Prompt', sans-serif;
+  background: linear-gradient(135deg, #f0f8ff, #d5f4ff);
+  margin: 0;
+  padding: 0;
+}
+
+/* Container Styles */
+.story-container {
+  width: 80%;
+  margin: 20px auto;
+  background-color: #ffffff;
+  border: 5px dashed #ffa07a;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  position: relative;
+}
+
+/* Header Styles */
+.header {
+  text-align: center;
+}
+
+.header h1 {
+  font-size: 2rem;
+  color: #ff4500;
+  text-shadow: 2px 2px #ffd700;
+}
+
+.header h2 {
+  font-size: 1.5rem;
+  color: #4682b4;
+}
+
+/* Form Styles */
+.add-post-form,
+.edit-post-form {
+  margin-bottom: 20px;
+}
+
+.add-post-form input,
+.add-post-form textarea,
+.edit-post-form input,
+.edit-post-form textarea {
+  width: calc(100% - 20px);
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+/* Button Styles */
+button {
+  background-color: #ffa500;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #ff7f50;
+}
+
+/* Like Button Style */
+.like-button {
+  background-color: #32cd32; /* สีเขียวสำหรับปุ่มไลค์ */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 8px 15px;
+  cursor: pointer;
+  font-size: 1rem;
+  margin-right: 10px;
+}
+
+.like-button:hover {
+  background-color: #28a745; /* สีเขียวเข้มเมื่อเลื่อนเมาส์ไป */
+}
+
+.like-button:active {
+  background-color: #218838; /* สีเขียวเข้มสุดเมื่อกดปุ่ม */
+}
+
+/* Post Styles */
+.posts-list {
+  list-style: none;
+  padding: 0;
+}
+
+.post-item {
+  background: #fffbe6;
+  margin: 10px 0;
+  padding: 15px;
+  border-radius: 10px;
+  border-left: 5px solid #ffa500;
+}
+
+.post-actions button {
+  margin-right: 10px;
+}
+
+/* Comment Section Styles */
+.comments-list {
+  list-style: none;
+  padding: 0;
+  margin-top: 10px;
+  background: #f0f8ff;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.comment-item {
+  background-color: #e6f7ff;
+  padding: 10px;
+  margin-bottom: 5px;
+  border-radius: 5px;
+  border-left: 3px solid #87cefa;
+  font-size: 0.9rem;
+  color: #333;
+}
+
+/* Add Comment Form Styles */
+.add-comment-form {
+  margin-top: 15px;
+}
+
+.add-comment-form input {
+  width: calc(80% - 20px);
+  display: inline-block;
+  margin-right: 10px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.add-comment-form button {
+  width: 18%;
+  display: inline-block;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: #4682b4;
+  color: white;
+}
+
+.add-comment-form button:hover {
+  background-color: #5b9bd5;
+}
+
+/* Edit Comment Form Styles */
+.edit-comment-form {
+  margin-top: 15px;
+}
+
+.edit-comment-form input {
+  width: calc(80% - 20px);
+  display: inline-block;
+  margin-right: 10px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f0f8ff;
+}
+
+.edit-comment-form button {
+  width: 18%;
+  display: inline-block;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: #ff4500;
+  color: white;
+}
+
+.edit-comment-form button:hover {
+  background-color: #e54a3a;
+}
+
+/* Decorative Icons */
+.decorative-icon {
+  position: absolute;
+  width: 60px;
+  height: auto;
+}
+
+.decorative-icon.left {
+  top: 10px;
+  left: 10px;
+}
+
+.decorative-icon.right {
+  top: 10px;
+  right: 10px;
+}
+
+/* Login Form Styles */
+.login-form {
+  width: 100%;
+  max-width: 400px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #ffffff;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+.login-form input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+.login-form button {
+  width: 100%;
+  padding: 10px;
+  background-color: #ffa500;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.1rem;
+  cursor: pointer;
+}
+
+.login-form button:hover {
+  background-color: #ff7f50;
+}
+
+.login-form .error-message {
+  color: red;
+  font-size: 0.9rem;
+  margin-top: 10px;
+}
